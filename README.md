@@ -24,9 +24,9 @@ pins compiled into the app (`ReleasePins.kt`). A published asset is never overwr
   Source and NOTICE: https://github.com/zenithblue-oss/panvk-kbase-android/releases/tag/panvk-kbase-v26.3.1
 * `turnip-27.0.0-r2-libvulkan_freedreno.so`: Mesa Turnip (Adreno), MIT license, taken from LFDev
   https://github.com/lfdevs/mesa-for-android-container/releases/tag/mesa-27.0.0-devel-20261025-r2
-* `alpaquita_rootfs.tar.zst`: the guest root filesystem (Alpaquita Linux, glibc, aarch64) with the Linux desktop and developer tools. Packages keep their own licenses.
-  It includes third-party command-line tools (AI coding agent and developer CLIs) that are distributed under their own vendors' licenses and terms, not under this project's license.
+* `alpaquita_rootfs.tar.zst`: the guest root filesystem (Alpaquita Linux, glibc, aarch64) with the Linux desktop and developer tools. Open-source packages keep their own licenses.
+  It also includes third-party AI command-line tools that are pre-installed in the image: the proprietary Claude Code, Antigravity (`agy`), Grok CLI and Kiro CLI, each under its vendor's own license and terms (not under this project's license), plus the open-source opencode and Codex. The AI services these tools use are proprietary network services.
 * `nativecode_update.tgz`: runtime update pack applied on top of the root filesystem. It contains OpenSSH, zsh and the third-party command-line tools `grok`, `agy` (Antigravity), `opencode` and `gh`, each under its own vendor's license and terms.
 * `nativecode_android_dev.tar.xz`: Android SDK components (for building Android apps inside the guest). These are Google's software, provided under the Android SDK License Agreement, not under this project's license.
 
-Use of any of the third-party tools is subject to the vendor's own terms.
+Use of any of the third-party tools is subject to the vendor's own terms. Nothing in this repository is a proprietary product of this project; the proprietary tools are redistributed as shipped by their vendors.
